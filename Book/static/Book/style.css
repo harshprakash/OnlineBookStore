@@ -1,0 +1,224 @@
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color:#3b5998;
+}
+
+/* General link styles*/
+a {
+    color: #292929;
+    text-decoration: none;
+}
+
+a:hover {
+    color: teal;
+    text-decoration: none;
+}
+
+/* Nav bar styles */
+.nav-link{
+    color: lavender;
+}
+
+#navbar .navbar-nav li a {
+    color: lightblue;
+    text-decoration: none;
+}
+#navbar .navbar-nav li a:hover {
+    color: teal;
+    text-decoration: none;
+}
+.navbar-header .navbar-brand {
+    color: #e6e6e6;
+}
+
+.link_text{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.link_text:hover{
+    color: teal;
+    text-decoration: none;
+}
+
+.navbar-form {
+    padding-top: 8px;
+    color: #e6e6e6;
+}
+
+.cover{
+    background-color: teal;
+    margin-top:50px;
+    min-height: 533px;
+}
+
+.maincontent {
+    background-color: #fff;
+    min-height: 550px;
+    padding-bottom: 50px;
+    padding-left: 55px;
+}
+
+.greeting{
+    margin-top:40px;
+    padding-bottom: 30px;
+}
+
+
+/* General link styles*/
+
+
+
+footer{
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+}
+
+/* Fix a couple things for mobile/low-res */
+
+@media screen and (max-width: 768px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+  .maincontent {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+/* Storefront styles */
+
+.storefront_book_display {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-left:25px;
+    margin-right:25px;
+}
+
+.storefront_book_title {
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+.storefront_book_author {
+    font-size: 11px;
+    display: block;
+}
+.storefront_add_to_cart {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+.panel{
+    background-color: #fff;
+    min-height: 100px;
+    margin-top: 60px;
+}
+
+.panel-info > .panel-heading {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+.panel-info {
+    border-color: teal;
+}
+
+.panel-title {
+    color: teal;
+}
+
+.bluefb{
+    background-color: #3b5998;
+    color: white;
+}
+
+/* Book detail styles */
+.detail_book_display {
+    text-align: center;
+    margin-top: 20px;
+}
+.detail_book_img {
+    margin-bottom: 20px;
+}
+.detail_book_title {
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+}
+.detail_book_author {
+    font-size: 16px;
+    display: block;
+}
+.detail_book_description {
+    text-align: left;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.detail_book_reviews_title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display:block;
+    font-weight: bold;
+}
+
+/* Cart Styles */
+.cart_container {
+		display: block;
+		max-width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+}
+.cart_item {
+		width: 100%;
+		margin-top: 20px;
+		display: block;
+		border-bottom: 1px solid black;
+		padding-bottom: 20px;
+}
+.cart_listing {
+		display: inline-block;
+		width: 50%;
+}
+.cart_listing .title {
+		display: block;
+		font-weight: bold;
+}
+.cart_price {
+		display: inline-block;
+		text-align: right;
+		width: 49%;
+		vertical-align: top;
+}
+.cart_value {
+		font-weight: bold;
+}
+.cart_quantity {
+		display: block;
+}
+.cart_total {
+		text-align: right;
+		margin-top: 20px;
+}
+.site-header .navbar-nav .nav-link {
+    color: #292929;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #292929;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }

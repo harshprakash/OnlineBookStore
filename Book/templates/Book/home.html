@@ -1,0 +1,48 @@
+{% extends "Book/base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 90px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 20%;
+  height: 30%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+</html>
+
+{% block body %}
+{% for book in books %}
+
+<div class="gallery">
+  <a  href="{% url  'detail' book.id  %}">
+    <img src="{{ book.cover.url }}" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">
+    <p><strong>Title:</strong> {{ book.title }}</p>  
+   </div>
+</div>
+<p><strong>Author:</strong> {{ book.authors }}</p>
+ <p><strong>Price: </strong> {{ book.price }} Rs</p>
+ 
+   <a href="{% url 'add_to_cart' %}"><strong>Add to Cart:</strong></a>
+         
+        
+{% endfor %}
+{% endblock %}

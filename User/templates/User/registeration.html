@@ -1,0 +1,23 @@
+{% extends "Book/base.html" %}
+
+{% block body %}
+<form method="POST">
+
+    {% csrf_token %}
+
+    <p><strong>Username: </strong> {{ form.username }} </p>
+    <p><strong>First-Name:</strong> {{ form.first_name }}</p>
+    <p><strong>last-Name: </strong> {{ form.last_name }} </p>
+    <p><strong>Email:</strong> {{ form.email }}</p>
+    <p><strong>password: </strong> {{ form.password1 }} </p>
+    <p><strong>ComfirmPassword:</strong> {{ form.password2 }}</p>
+    
+   <button class="submit">submit</button>
+</form>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        already have a account? <a class="ml-2" href="{% url 'Login' %}">Sign In</a>
+    </small>
+</div>
+
+{% endblock %}

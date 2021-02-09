@@ -1,0 +1,45 @@
+
+{% extends "Book/base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 90px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 20%;
+  height: 30%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+</html>
+
+{% block body %}
+
+<div class="gallery">
+  
+    <img src="{{ object.cover.url }}" alt="Cinque Terre" width="600" height="400">
+ 
+  <div class="desc">
+    <p><strong>Title:</strong> {{ object.title }}</p>  
+   </div>
+</div>
+<p><strong>Author:</strong> {{ object.authors }}</p>
+ <p><strong>Price: </strong> {{ object.price }} Rs</p>
+
+
+{% endblock %}

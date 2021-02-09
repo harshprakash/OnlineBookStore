@@ -1,0 +1,22 @@
+{% extends "Book/base.html" %}
+
+{% block body %}
+<form method="POST">
+
+    {% csrf_token %}
+
+    <p><strong>UserName:</strong> {{ form.username }}</p>
+    <p><strong>Password: </strong> {{ form.password }} </p>
+   <button class="submit">submit</button>
+</form>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        i have no account then <a class="ml-2" href="{% url 'register' %}">Register</a>
+    </small>
+    
+</div>
+<small class="text-muted">
+    <a class="ml-2" href="">forgot password?</a>
+</small>
+
+{% endblock %}

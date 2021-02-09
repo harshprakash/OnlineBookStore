@@ -1,0 +1,11 @@
+{% extends "Book/base.html" %}
+
+{% block body %}
+<h2>you have been logout</h2>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        Login again? <a class="ml-2" href="{% url 'Login' %}">Sign In</a>
+    </small>
+</div>
+
+{% endblock %}
