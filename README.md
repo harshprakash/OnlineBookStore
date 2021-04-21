@@ -29,7 +29,7 @@ default-character-set = utf8
 ```
 
 ## Contribution
-Both have equal controbution to the project.
+Both have equal contribution to the project.
 
 Dhiraj Kumar Sah: Sytem Design, SRS Prepration,  Database Design and Creation, E-R diagram,  Backend Admin Login Creation, Product Listing implementation, Search Funtionality,  Bootstrap, Black Box testing and report, readme.
 
