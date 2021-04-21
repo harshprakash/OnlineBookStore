@@ -31,6 +31,6 @@ default-character-set = utf8
 ## Contribution
 Both have equal controbution to the project.
 
-Dhiraj Kumar Sah: Sytem Design, SRS Prepration,  Database Design and Creation, E-R diagram,  Backend Admin Login, Product Listing implementation, Search Funtionality,  Bootstrap, Black Box testing and report, readme.
+Dhiraj Kumar Sah: Sytem Design, SRS Prepration,  Database Design and Creation, E-R diagram,  Backend Admin Login Creation, Product Listing implementation, Search Funtionality,  Bootstrap, Black Box testing and report, readme.
 
 Harsh Prakash: Data Flow Diagram, Usecase, Tech Stack Selection, User Registration, User Login, Home page with Product,  Cart Funtionality, Add to cart, Remove from cart, Payment Integration, Order tracking and Cancelation, Unit testing, readme.
