@@ -32,4 +32,5 @@ default-character-set = utf8
 Both have equal controbution to the project.
 
 Dhiraj Kumar Sah: Sytem Design, SRS Prepration, Tech Stack Selection, Database Design and Creation, E-R diagram, Data Flow Diagram, Usecase, Backend Admin Login, Bootstrap, Black Box testing and report, readme.
+
 Harsh Prakash: User Registration, User Login, Home page with Product, Search Funtionality, Cart Funtionality, Add to cart, Remove from cart, Payment Integration, Order tracking and Cancelation, Unit testing, readme.
