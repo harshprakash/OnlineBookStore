@@ -146,4 +146,4 @@ LOGIN_REDIRECT_URL ='home'
 LOGIN_URL = 'Login'
 
 razorpay_id = ('rzp_test_C67iutkDmN2lWu')
-razorpay_account_id = ('upCUcZN9RtLrCkV15dnTM2Xr')
+razorpay_account_id = ('count_id')
