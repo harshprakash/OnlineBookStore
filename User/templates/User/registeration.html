@@ -4,14 +4,7 @@
 <form method="POST">
 
     {% csrf_token %}
-
-    <p><strong>Username: </strong> {{ form.username }} </p>
-    <p><strong>First-Name:</strong> {{ form.first_name }}</p>
-    <p><strong>last-Name: </strong> {{ form.last_name }} </p>
-    <p><strong>Email:</strong> {{ form.email }}</p>
-    <p><strong>password: </strong> {{ form.password1 }} </p>
-    <p><strong>ComfirmPassword:</strong> {{ form.password2 }}</p>
-    
+    {{ form.as_p}}
    <button class="submit">submit</button>
 </form>
 <div class="border-top pt-3">
@@ -21,3 +14,4 @@
 </div>
 
 {% endblock %}
+
