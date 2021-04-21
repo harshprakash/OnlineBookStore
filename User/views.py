@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from .form import UserRegisteration
+#registertion of new user function
 def register(request):
     if request.method == 'POST':
         form = UserRegisteration(request.POST)

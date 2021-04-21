@@ -10,4 +10,5 @@ urlpatterns = [
     #path('', HomePageView.as_view(), name='home'),
     path('detail/<int:pk>/',BookDetailView.as_view(),name='detail'),
     path('search/', SearchResultsView.as_view(), name='search_results'),
+    
 ]

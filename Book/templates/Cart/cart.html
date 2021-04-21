@@ -11,7 +11,7 @@
 				    <span class="title">{{ item.book.title }}</span> by {{ item.book.authors }}
 				</div>
 				<div class="cart_price">
-				    <span class="cart_quantity">{{ item.quantity }} x $<span class="cart_value">{{ item.book.price }}</span></span>
+				    <span class="cart_quantity">{{ item.quantity }} x Rs<span class="cart_value">{{ item.book.price }}</span></span>
 					Quantity: <a href="{% url 'add_to_cart' item.book.id %}">[+]</a> / <a href="{% url 'remove_from_cart' item.book.id %}">[-]</a>
 				</div>
 			</div>
@@ -21,12 +21,16 @@
 			</div>
 		{% endfor %}
 		<div class="cart_total">
-			 <h4> Total: $<span class="cart_value">{{ total }}</span></h4>
+			 <h4> Total: Rs<span class="cart_value">{{ total }}</span></h4>
 			{% if cart %}
-			<a href=""><input type="submit" id="btn-logic" class="btn btn-success" value="Purchase"></a>
+			<form method="POST" action="/payment/">{% csrf_token %}
+				<button class="btn btn-primary" type="submit">Proceed for Payment</button>
+				</form>
+			
 			{% endif %}
 		</div>
 		</div>
 	</div>
 </div>
+
 {% endblock %}

@@ -41,7 +41,7 @@ div.desc {
 <p><strong>Author:</strong> {{ book.authors }}</p>
  <p><strong>Price: </strong> {{ book.price }} Rs</p>
  
-   <a href="{% url 'add_to_cart' %}"><strong>Add to Cart:</strong></a>
+   <a href="{% url 'add_to_cart' book.id %}"><strong>Add to Cart:</strong></a>
          
         
 {% endfor %}

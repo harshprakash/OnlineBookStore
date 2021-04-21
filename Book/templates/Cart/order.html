@@ -1,0 +1,53 @@
+{% extends "Book/base.html" %}
+
+
+
+{% block body %}
+<div class="col-md-8 col-md-offset-2 col-sm-12 maincontent">
+    <div style="text-align:center;text-decoration:underline"><h3>my  order</h3></div>
+	    <div class="cart_container">
+            
+        
+        {% for order in order_qs %}
+        <div class="cart_listing">
+        <span class="title">{{ order.product.title }}</span> by {{ order.product.authors }}
+        <p><strong>email: </strong> {{ order.order.user.email}} </p>
+        <p><strong>order_id: </strong> {{ order.order.order_id}} </p>
+        {% if order.order.status == 1 %}
+        <p><strong>Status:</strong> Not packed </p>  
+        {% endif %}
+        {% if order.order.status == 2 %}
+        <p><strong>Status:</strong> Ready for shipment </p>  
+        {% endif %}
+        {% if order.order.status == 3 %}
+        <p><strong>Status:</strong> Shipped </p>  
+        {% endif %}
+        {% if order.order.status == 4 %}
+        <p><strong>Status:</strong> Delivered </p>  
+        {% endif %}
+        {% if order.order.payment_status == 1 %}
+        <p><strong>payment Status:</strong> success </p>  
+        {% endif %}
+        {% if order.order.payment_status == 2 %}
+        <p><strong>payment Status:</strong> failure </p>  
+        {% endif %}
+        {% if order.order.payment_status == 3 %}
+        <p><strong>payment Status:</strong> cashOndelivery </p>  
+        {% endif %}
+        <p><strong>Quantity:</strong> {{ order.quantity }}</p>
+        <p><strong>Price:</strong> {{ order.price }}</p>
+        <p><strong>Amount:</strong> {{order.quantity}} * {{ order.price }} = {{ order.order.total_amount }}</p>
+        <p><strong>date:</strong> {{ order.order.datetime_of_payment }}</p>
+        <a class="btn btn-sm btn-danger" href="{% url 'delete_order' order.order_id %}">Cancel</a>
+
+      
+
+    </div>
+			
+		{% endfor %}
+        
+   
+
+{% endblock %}
+
+
