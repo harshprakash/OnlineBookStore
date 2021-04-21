@@ -1,7 +1,7 @@
 # OnlineBookStore
-This is the fullstack devlopment  of BookStore web-app.
+This is the fullstack devlopment  of BookStore web-app using django.
 
-To run this web-app, execute the following steps:
+To run this web-app, execute the following steps :
 1. clone the repo or run  ``https://github.com/harshprakash/OnlineBookStore.git``
 3. install mySqlClient  '' sudo apt-get install mysql-server ''
 2. install mysql (or click the [link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04) for installation help).
