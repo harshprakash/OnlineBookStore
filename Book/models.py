@@ -4,10 +4,10 @@ from django.db.models import Model
 from PIL import Image
 
 #  database creation for Book
-class Book(models.Model):
-    title = models.CharField(max_length=180)
-    authors = models.CharField(max_length=180)
-    cover = models.ImageField(default="none",upload_to='profile_pics')
+class Book(models.Model):   
+    title = models.CharField(max_length=180)   # Title of the book
+    authors = models.CharField(max_length=180) # Author of the book 
+    cover = models.ImageField(default="none",upload_to='profile_pics') # image of book cover
     price = models.PositiveIntegerField(default=0)
     
     def __str__(self):
