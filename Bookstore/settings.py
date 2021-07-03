@@ -138,6 +138,12 @@ EMAIL_HOST_USER='sharshp550@gmail.com'
 EMAIL_HOST_PASSWORD='**Z**'
 
 
+
+
+
+# Extra lookup directories for collectstatic to find static files
+
+
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR.joinpath('static')
 MEDIA_ROOT = BASE_DIR.joinpath('media')
@@ -146,4 +152,4 @@ LOGIN_REDIRECT_URL ='home'
 LOGIN_URL = 'Login'
 
 razorpay_id = ('rzp_test_C67iutkDmN2lWu')
-razorpay_account_id = ('count_id')
+razorpay_account_id = ('upCUcZN9RtLrCkV15dnTM2Xr')
