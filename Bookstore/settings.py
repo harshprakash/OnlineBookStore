@@ -145,7 +145,7 @@ EMAIL_HOST_PASSWORD='**Z**'
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR.joinpath('static')
+STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
 MEDIA_ROOT = BASE_DIR.joinpath('media')
 MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL ='home'
