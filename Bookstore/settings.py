@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+import os
+import psycopg2
+
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -96,6 +100,12 @@ DATABASES = {
     }
 }
 ...
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -158,6 +168,3 @@ razorpay_id = ('rzp_test_C67iutkDmN2lWu')
 razorpay_account_id = ('upCUcZN9RtLrCkV15dnTM2Xr')
 
 
-import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)

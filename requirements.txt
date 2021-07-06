@@ -11,10 +11,10 @@ docutils==0.14
 gunicorn==19.9.0
 idna==2.8
 jmespath==0.10.0
-
+mysqlclient==1.4.4
 
 pillow==7.0.0
-
+psycopg2-binary==2.9.1
 
 python-dateutil==2.8.1
 
