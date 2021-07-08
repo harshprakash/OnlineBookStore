@@ -153,7 +153,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST ='smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS= True
+EMAIL_HOST_USER=os.environ.get('email')
+EMAIL_HOST_PASSWORD=os.environ.get('password')
 
 
 
@@ -178,9 +183,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 razorpay_id = os.environ.get('razorpay_id')
 razorpay_account_id = os.environ.get('razorpay_account_id')
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST ='smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS= True
-EMAIL_HOST_USER=os.environ.get('email')
-EMAIL_HOST_PASSWORD=os.environ.get('password')
