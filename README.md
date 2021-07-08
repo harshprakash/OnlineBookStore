@@ -1,13 +1,12 @@
 # OnlineBookStore
 This is the fullstack devlopment  of BookStore web-app using django.
-To view the web-app ``https://onlinebooksstoress.herokuapp.com/ `` 
+
+1. To view the web-app ``https://onlinebooksstoress.herokuapp.com/ `` 
 
 To run this web-app, execute the following steps :
-1. clone the repo or run  ``https://github.com/harshprakash/OnlineBookStore.git``
+2. clone the repo or run  ``https://github.com/harshprakash/OnlineBookStore.git``
 
-~~~~
-
- ## To run.
+## To run.
 ```
 5. run cd BookStore.
 6  run  python manage.py migrate
